@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #cd423f;
+}
+
+header {
+	background-color: #4b63ba;
+	display: flex;
+	align-items: center;
+	padding: 1em;
+	height: 30%;
+}
+
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+    width: 100%;
+}
+
+#boxPoke {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 25%;
+	width: calc(100% / 3 - 10em);
+	padding: 1em;
+	margin-top: 1em;
+	border: 1em solid grey;
+	border-radius: .5em;
+	background-color: #d76c73;
+	color:#eff7d7;
+	transition-duration: .8s;
+}
+
+#boxPoke:hover {
+    transform: scale(1.1);
+    transform: rotateY(180deg);/*retourner la carte pour d'autres infos*/
+    -webkit-box-shadow: -2px 0px 22px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 22px 2px rgba(0,0,0,0.75);
+    box-shadow: -2px 0px 22px 2px rgba(0,0,0,0.75);
+}
